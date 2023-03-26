@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disk Usage Analyzer</title>
+</head>
+<body>
+    <h1>Disk Usage Analyzer</h1>
+    <form action="/scan" method="post">
+        <label for="folder_path">Folder path:</label>
+        <input type="text" name="folder_path" id="folder_path">
+        <input type="submit" value="Scan">
+    </form>
+    <h2>Delete a file or folder</h2>
+    <form action="/delete" method="post">
+        <label for="path">Path:</label>
+        <input type="text" name="path" id="path">
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
